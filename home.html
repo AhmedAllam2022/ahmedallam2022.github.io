@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allam - Home</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- Font Icons -->
+    <link rel='stylesheet' href='./CSS/uicons-brands.css'>
+    <link rel='stylesheet' href='./CSS/all.min.css'>
+    <!-- Render Page Normally -->
+    <link rel="stylesheet" href=".//CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="./home.html" title="Allam Walker">
+                <span>&lt;</span>aw/<span>&gt;</span>
+                <div class="top-border"></div>
+                <div class="right-border"></div>
+                <div class="bottom-border"></div>
+                <div class="left-border"></div>
+            </a>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                <form action="" role="search">
+                    <label for="site-search" class="visually-hidden">Search the site</label>
+                    <input class="input-search" type="search" name="search" id="site-search" placeholder="Search">
+                </form>
+            </div>
+
+            <!-- New: mobile menu toggle, only visible under 860px -->
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav id="mainNav">
+                <a class="home active" href="./home.html">home</a>
+                <a class="about" href="./about.html">about</a>
+                <a class="portfolio" href="./portfolio.html">portfolio</a>
+                <a class="skills" href="#">skills</a>
+                <a class="content" href="#">content</a>
+            </nav>
+        </header>
+
+        <section class="home-content">
+            <div class="home-text">
+                <h3 class="welcome">Hello, <span>it </span> is me</h3>
+                <h1 class="name">ahmed allam</h1>
+                <h3 class="job"><span>i </span>am a <span>frontend developer</span></h3>
+                <p class="desc">Bringing an engineer’s mindset to modern web development.</p>
+
+                <div class="social">
+                    <a class="social-link" href="https://wwwlinkedin.com/in/ahmedallam2024/" target="_blank" rel="noopener noreferrer" aria-label="Ahmed Allam on LinkedIn" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a class="cv" href="./files/Ahmed_Allam_Frontend-Developer_Resume_2026.pdf" download="Ahmed_Allam_CV.pdf" aria-label="Download CV" title="Download CV">
+                <i class="fa-solid fa-file"></i>
+                <span>download cv</span>
+            </a>
+
+
+            <div class="home-photo">
+                <img class="personal-img" src="./Images/personal-ph/1716815221245.jpg" alt="Portrait of Ahmed Allam">
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

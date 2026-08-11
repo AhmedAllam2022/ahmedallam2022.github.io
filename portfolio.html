@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allam - Portfolio</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- Font Icons -->
+    <link rel='stylesheet' href='./CSS/uicons-brands.css'>
+    <link rel='stylesheet' href='./CSS/all.min.css'>
+    <!-- Render Page Normally -->
+    <link rel="stylesheet" href=".//CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="./home.html" title="Allam Walker">
+                <span>&lt;</span>aw/<span>&gt;</span>
+                <div class="top-border"></div>
+                <div class="right-border"></div>
+                <div class="bottom-border"></div>
+                <div class="left-border"></div>
+            </a>
+
+            <div class="search" title="Search">
+                <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                <form action="" role="search">
+                    <label for="site-search" class="visually-hidden">Search the site</label>
+                    <input class="input-search" type="search" name="search" id="site-search" placeholder="Search">
+                </form>
+            </div>
+
+                        <!-- New: mobile menu toggle, only visible under 860px -->
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav id="mainNav" class="nav-static">
+                <a class="home" href="./home.html">home</a>
+                <a class="about" href="./about.html">about</a>
+                <a class="portfolio active" href="./portfolio.html">portfolio</a>
+                <a class="skills" href="#">projects</a>
+                <a class="content" href="#">contact</a>
+            </nav>
+        </header>
+
+        <section class="portfolio-section" aria-labelledby="portfolio-heading">
+            <div class="about-heading">
+                <h1 id="portfolio-heading">Portfolio</h1>
+                <div class="bar"></div>
+            </div>
+            <p class="portfolio-intro">A selection of projects I've built while sharpening my frontend skills, from small interactive tools to full page layouts. Each one is coded from scratch, no frameworks, just HTML, CSS and JavaScript.</p>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/jadoo.jpeg" alt="Screenshot of Movie Explorer project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">API</span>
+                        </div>
+                        <h3 class="project-title">jadoo</h3>
+                        <p class="project-desc">Browse trending titles, watch trailers and save favorites to a personal watchlist.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/jadoo/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/jadoo" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/ableton.jpeg" alt="Screenshot of Weather Forecast App project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">API</span>
+                        </div>
+                        <h3 class="project-title">ableton</h3>
+                        <p class="project-desc">A city-based forecast tool with a 5-day outlook, built on a public weather API.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/ableton/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/ableton" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/portfolio.jpeg" alt="Screenshot of Task Manager project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">LocalStorage</span>
+                        </div>
+                        <h3 class="project-title">Portoflio - SPA</h3>
+                        <p class="project-desc">A drag-and-drop to-do board with persistent storage and due-date reminders.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/portfolio/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/portfolio" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/dashboard.jpeg" alt="Screenshot of Recipe Finder project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">HTML</span>
+                            <span class="tech-chip">CSS</span>
+                        </div>
+                        <h3 class="project-title">dashboard</h3>
+                        <p class="project-desc">Search and filter recipes by ingredient, diet type and cooking time.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/Template-4/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/Template-4" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/kasper.png" alt="Screenshot of Budget Tracker project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">HTML</span>
+                            <span class="tech-chip">CSS</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">kasper</h3>
+                        <p class="project-desc">Log expenses by category and visualize monthly spending with animated bar charts.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/kasper/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/kasper" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/leon.png" alt="Screenshot of E-Commerce Dashboard project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">HTML</span>
+                            <span class="tech-chip">CSS</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">leon</h3>
+                        <p class="project-desc">An admin dashboard for tracking orders, revenue and inventory with live-updating charts.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/leon/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/leon" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

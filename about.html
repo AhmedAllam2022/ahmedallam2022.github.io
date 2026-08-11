@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allam - About</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- Font Icons -->
+    <link rel='stylesheet' href='./CSS/uicons-brands.css'>
+    <link rel='stylesheet' href='./CSS/all.min.css'>
+    <!-- Render Page Normally -->
+    <link rel="stylesheet" href=".//CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="./home.html" title="Allam Walker">
+                <span>&lt;</span>aw/<span>&gt;</span>
+                <div class="top-border"></div>
+                <div class="right-border"></div>
+                <div class="bottom-border"></div>
+                <div class="left-border"></div>
+            </a>
+
+            <div class="search" title="Search">
+                <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                <form action="" role="search">
+                    <label for="site-search" class="visually-hidden">Search the site</label>
+                    <input class="input-search" type="search" name="search" id="site-search" placeholder="Search">
+                </form>
+            </div>
+
+                        <!-- New: mobile menu toggle, only visible under 860px -->
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav id="mainNav" class="nav-static">
+                <a class="home" href="./home.html">home</a>
+                <a class="about active" href="./about.html">about</a>
+                <a class="portfolio" href="./portfolio.html">portfolio</a>
+                <a class="skills" href="#">projects</a>
+                <a class="content" href="#">contact</a>
+            </nav>
+        </header>
+
+        <section class="about-section">
+            <div class="about-heading">
+                <h1>about me</h1>
+                <span class="bar"></span>
+            </div>
+
+            <div class="about-body">
+                <span class="about-accent" aria-hidden="true"></span>
+                <div class="about-me">
+                    <p>Hey, I’m Ahmed!</p>
+                    <p>Welcome to my little corner of the web, where I share my projects, what I’m learning, tutorials, and anything else I find worth putting out there.</p>
+                    <p>I’m a frontend developer with a background in civil engineering. My engineering background has given me a structured, analytical, and problem-solving mindset — qualities that I now bring with me into the world of software development.</p>
+                    <p>My relationship with computers goes back more than 20 years, to the days of Windows 98, Windows Millennium, and Windows XP. I’ve always been fascinated by computers, technology, and the internet, long before I ever thought about turning that passion into a career.</p>
+                    <p>Today, I’m pursuing that passion through software development. I genuinely enjoy learning, experimenting, building things, and understanding how technology works. I have an almost endless curiosity for this field, and I honestly don’t see myself ever getting tired of learning, improving, and growing in something I truly love.</p>
+                    <p>Outside of coding, I enjoy working out, reading, watching movies, and playing video games.</p>
+                    <p>This website is a space for learning, building, and self-expression — no ads, no affiliate links, no tracking, no sponsored posts, and no paywall.</p>
+                    <p>Just a small creative corner of the internet where I can build things, share what I learn, and hopefully inspire others to create something of their own.</p>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <span class="hobby-chip"><i class="fa-solid fa-dumbbell" aria-hidden="true"></i>working out</span>
+                <span class="hobby-chip"><i class="fa-solid fa-book" aria-hidden="true"></i>reading</span>
+                <span class="hobby-chip"><i class="fa-solid fa-film" aria-hidden="true"></i>movies</span>
+                <span class="hobby-chip"><i class="fa-solid fa-gamepad" aria-hidden="true"></i>video games</span>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
