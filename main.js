@@ -38,7 +38,15 @@ if(socialDiv) {
 
 // Portfolio Page - Start ------------------------------------------------------------
 
-
+const projectThumbs = document.querySelectorAll('.project-thumb');
+console.log(projectThumbs);
+const liveDemo = document.querySelectorAll('.project-demo');
+console.log(liveDemo);
+projectThumbs.forEach( (thumb, i) => {
+    thumb.addEventListener('click', () => {
+        liveDemo[i].click();
+    })
+})
 
 // Portfolio Page - End ------------------------------------------------------------
 
