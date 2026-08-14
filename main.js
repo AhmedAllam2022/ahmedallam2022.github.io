@@ -39,14 +39,33 @@ if(socialDiv) {
 // Portfolio Page - Start ------------------------------------------------------------
 
 const projectThumbs = document.querySelectorAll('.project-thumb');
-console.log(projectThumbs);
 const liveDemo = document.querySelectorAll('.project-demo');
-console.log(liveDemo);
-projectThumbs.forEach( (thumb, i) => {
-    thumb.addEventListener('click', () => {
-        liveDemo[i].click();
-    })
-})
 
+for (let i = 0 ; i < projectThumbs.length ; i++) {
+    projectThumbs[i].onclick = function () {
+        liveDemo[i].click()
+    }
+}
 // Portfolio Page - End ------------------------------------------------------------
 
+// Testing Part - Start------------------------------------------------------------
+
+
+const obj = {
+    name: 'ahmed', 
+    age: 35, 
+    city: 'eg'
+}
+const {name = 'aya', age, city} = obj
+console.log(name);
+
+
+
+
+
+
+
+
+
+
+// Testing Part - End------------------------------------------------------------
