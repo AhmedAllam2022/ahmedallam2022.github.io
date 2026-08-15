@@ -268,7 +268,7 @@ nav a, .logo {
 nav a:hover, nav .active {
     color: var(--color-pallete-4);
 }
-.home-content {
+.home-section {
     margin-top: 50px;
     display: flex;
     gap: 30px;
@@ -433,7 +433,7 @@ nav a:hover, nav .active {
         margin-left: 5%;
         margin-right: 5%;
     }
-    .home-content {
+    .home-section {
         gap: 20px;
     }
     .home-photo img {
@@ -495,7 +495,7 @@ nav a:hover, nav .active {
         width: 100%;
     }
 
-    .home-content {
+    .home-section {
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -789,3 +789,278 @@ nav a:hover, nav .active {
     }
 }
 /* Portfolio Page - End ----------------------------------------------------------*/
+
+/* Skills Page - Start ----------------------------------------------------------*/
+.skills-section {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.skills-intro {
+    max-width: 65ch;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin: 0 0 50px;
+}
+
+/* Category grid ------------------------------------------------------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+    margin-bottom: 60px;
+}
+
+.skill-category-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 24px;
+    color: var(--text-color);
+}
+
+.skill-category-title i {
+    color: var(--color-pallete-2);
+    font-size: 0.95em;
+}
+
+/* Individual skill bar -------------------------------------------------- */
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-bar:last-child {
+    margin-bottom: 0;
+}
+
+.skill-bar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.skill-percent {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--color-pallete-2);
+}
+
+.skill-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 30px;
+    background-color: rgba(248, 250, 252, 0.1);
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, var(--color-pallete-4), var(--color-pallete-1));
+}
+
+/* Professional development / certifications ----------------------------- */
+.skills-programs {
+    margin-top: 20px;
+}
+
+/* Currently learning banner ---------------------------------------------- */
+.currently-learning {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 24px;
+    border: 1px solid var(--color-pallete-4);
+    border-radius: 16px;
+    background-color: rgba(4, 88, 140, 0.12);
+}
+
+.currently-learning i {
+    font-size: 1.4em;
+    color: var(--color-pallete-2);
+    flex-shrink: 0;
+}
+
+.currently-learning p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.currently-learning strong {
+    color: var(--color-pallete-2);
+}
+
+/* Responsive -------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 860px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .skills-intro {
+        font-size: 1em;
+        margin-bottom: 36px;
+    }
+    .currently-learning {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+/* Skills Page - End ----------------------------------------------------------*/
+
+/* Contact Page - Start ----------------------------------------------------------*/
+.contact-section {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.contact-intro {
+    max-width: 65ch;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin: 0 0 50px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Form ------------------------------------------------------------------ */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: transparent;
+    border: 1px solid var(--color-pallete-4);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-size: 0.95em;
+    outline: none;
+    transition: var(--transition-duration);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #64748B;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-pallete-2);
+    box-shadow: 0px 0px 20px var(--color-pallete-2);
+}
+
+.contact-submit {
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+/* Direct info panel ------------------------------------------------------ */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px;
+    border: 1px solid var(--color-pallete-4);
+    border-radius: 16px;
+    background-color: rgba(4, 88, 140, 0.12);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95em;
+}
+
+.contact-info-item i {
+    color: var(--color-pallete-2);
+    font-size: 1.1em;
+    flex-shrink: 0;
+}
+.contact-info-item span {
+    line-height: 1.6;
+}
+.contact-info-item a {
+    display: inline;
+    word-break: break-all;
+}
+
+.contact-socials {
+    margin-top: 6px;
+    gap: 14px;
+}
+
+/* Responsive -------------------------------------------------------------- */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 860px) {
+    .contact-intro {
+        font-size: 1em;
+        margin-bottom: 36px;
+    }
+    .contact-info {
+        padding: 22px;
+    }
+}
+/* Contact Page - End ----------------------------------------------------------*/

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allam - Contact-us</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- Font Icons -->
+    <link rel='stylesheet' href='./CSS/uicons-brands.css'>
+    <link rel='stylesheet' href='./CSS/all.min.css'>
+    <!-- Render Page Normally -->
+    <link rel="stylesheet" href=".//CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="./home.html" title="Ahmed Allam">
+                <span>&lt;</span>aa/<span>&gt;</span>
+                <div class="top-border"></div>
+                <div class="right-border"></div>
+                <div class="bottom-border"></div>
+                <div class="left-border"></div>
+            </a>
+
+            <div class="search" title="Search">
+                <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                <form action="" role="search">
+                    <label for="site-search" class="visually-hidden">Search the site</label>
+                    <input class="input-search" type="search" name="search" id="site-search" placeholder="Search">
+                </form>
+            </div>
+
+                        <!-- New: mobile menu toggle, only visible under 860px -->
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav id="mainNav" class="nav-static">
+                <a class="home" href="./index.html">home</a>
+                <a class="about" href="./about.html">about</a>
+                <a class="portfolio" href="./portfolio.html">portfolio</a>
+                <a class="skills" href="./skills.html">skills</a>
+                <a class="contact active" href="./contact.html">contact</a>
+            </nav>
+        </header>
+
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div class="about-heading">
+                <h1 id="contact-heading">Contact</h1>
+                <div class="bar"></div>
+            </div>
+            <p class="contact-intro">Have a project in mind or just want to say hi? Fill out the form and it'll open straight in your email app, ready to send.</p>
+
+            <div class="contact-grid">
+
+                <form class="contact-form" action="mailto:hamada4u2009@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="project-demo contact-submit">
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i>
+                        <a href="mailto:your.email@example.com">hamada4u2009@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot fa-fw" aria-hidden="true"></i>
+                        <span>Based in Egypt &middot; Available for remote work</span>
+                    </div>
+
+                    <div class="social contact-socials">
+                        <a class="social-link" href="#" target="_blank" rel="noopener" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-link" href="#" target="_blank" rel="noopener" title="GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
