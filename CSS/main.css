@@ -333,6 +333,18 @@ nav a:hover, nav .active {
     display: flex;
     align-items: center;
     gap: 12px;
+    animation-name: fading-in;
+    animation-duration: 1s;
+}
+@keyframes fading-in {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .social-link {
     width: 35px;
