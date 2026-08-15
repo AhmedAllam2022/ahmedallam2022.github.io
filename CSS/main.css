@@ -331,8 +331,8 @@ nav a:hover, nav .active {
 }
 .social {
     display: flex;
-    justify-content: start;
     align-items: center;
+    gap: 12px;
 }
 .social-link {
     width: 35px;
@@ -378,15 +378,13 @@ nav a:hover, nav .active {
     gap: 6px;
     color: var(--text-color);
     background-color: var(--color-pallete-4);
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    width: 45px;
-    padding: 5px 12px;
+    width: 35px;
     height: 35px;
+    padding: 5px 12px;
     text-align: center;
     text-transform: capitalize;
-    /* margin-top: 20px; */
     overflow: hidden;
+    border-radius: 30px;
     transition: 0.3s;
 }
 .cv:hover,
@@ -503,8 +501,8 @@ nav a:hover, nav .active {
     }
     .home-text .social,
     .home-text .desc {
-        justify-content: center;
-        margin-left: auto;
+        justify-content: center; 
+        margin-left: auto; 
         margin-right: auto;
     }
     .home-text .cv {

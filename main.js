@@ -23,17 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const socialDiv = document.querySelector('.social');
 
-if(socialDiv) {
-    socialDiv.style.cssText = `
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    `
-    const cvElement = document.querySelector('.cv');
-    socialDiv.append(cvElement);
-}
 // Home Page - End ------------------------------------------------------------
 
 // Portfolio Page - Start ------------------------------------------------------------
