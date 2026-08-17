@@ -420,11 +420,14 @@ nav a:hover, nav .active {
 .home-photo {
     /* flex-basis: 65%; */
     margin-top: -23px;
-    width: max-content;
-    overflow: hidden;
+    max-width: 350px;
+    max-height: 350px;
     border-radius: 50%;
     filter: grayscale(0.5);
-    transition: var(--transition-duration); 
+    transition: var(--transition-duration);
+    border: 10px solid transparent;
+    outline: 5px solid var(--color-pallete-4);
+    overflow: hidden;
 }
 .home-photo:hover {
     filter: grayscale(0);
@@ -433,7 +436,7 @@ nav a:hover, nav .active {
 .home-photo img {
     max-width: 400px;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .personal-img {
     width: 100%;
@@ -494,14 +497,7 @@ nav a:hover, nav .active {
         max-height: 320px;
     }
     /* Pages with no JS (e.g. about.html) skip the collapse behaviour entirely */
-    nav.nav-static {
-        position: static;
-        max-height: none;
-        overflow: visible;
-        background-color: transparent;
-        padding: 0;
-        margin-top: 10px;
-    }
+
     nav a {
         margin: 10px 0;
         width: 100%;
@@ -769,6 +765,10 @@ nav a:hover, nav .active {
     background-color: var(--button-hover-color);
     box-shadow: 0px 0px 20px var(--color-pallete-2);
 }
+.submit-bright {
+    background-color: var(--button-hover-color);
+    box-shadow: 0px 0px 20px var(--color-pallete-4);
+}
 .project-demo i {
     font-size: 0.85em;
 }
@@ -957,7 +957,7 @@ nav a:hover, nav .active {
     font-size: 1.1em;
     color: var(--text-color);
     opacity: 0.85;
-    margin: 0 0 50px;
+    margin: 0 0 70px;
 }
 
 .contact-grid {
@@ -972,8 +972,14 @@ nav a:hover, nav .active {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    margin-top: -22px;
 }
-
+.contact-form label {
+    transition: var(--transition-duration);
+}
+.contact-form label:hover {
+    color: var(--color-pallete-2);
+}
 .form-group {
     display: flex;
     flex-direction: column;

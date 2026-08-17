@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // Home Page - End ------------------------------------------------------------
 
 // Portfolio Page - Start ------------------------------------------------------------
@@ -32,24 +31,37 @@ const projectThumbs = document.querySelectorAll('.project-thumb');
 const liveDemo = document.querySelectorAll('.project-demo');
 
 for (let i = 0 ; i < projectThumbs.length ; i++) {
-    projectThumbs[i].onclick = function () {
+    projectThumbs[i].addEventListener('click', function () {
         liveDemo[i].click()
-    }
+    }) 
 }
 // Portfolio Page - End ------------------------------------------------------------
 
 // Testing Part - Start------------------------------------------------------------
 
 
-const obj = {
-    name: 'ahmed', 
-    age: 35, 
-    city: 'eg'
+
+
+// Contact Page - Start------------------------------------------------------------
+const textInput = document.querySelector('[type="text"]');
+const mailInput = document.querySelector('[type="email"]');
+const textarea = document.querySelector('textarea');
+const submitBtn = document.querySelector('.contact-submit');
+
+function validateInput () {
+    if (!textInput || !mailInput || !textarea || !submitBtn) return;
+    if (textInput.value != '' && mailInput.value != '' && textarea.value != '') {
+        submitBtn.classList.add('submit-bright');
+    } else {
+        submitBtn.classList.remove('submit-bright');
+    }
 }
-const {name = 'aya', age, city} = obj
-console.log(name);
 
 
+textInput.addEventListener('input', validateInput);
+mailInput.addEventListener('input', validateInput);
+textarea.addEventListener('input', validateInput);
+// Contact Page - End------------------------------------------------------------
 
 
 
