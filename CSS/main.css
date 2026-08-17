@@ -829,13 +829,13 @@ nav a:hover, nav .active {
 
 .skill-category-title {
     display: flex;
-    align-items: center;
+    height: 55px;
     gap: 10px;
     font-size: 1.05em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 0 0 24px;
+    /* margin: 0 0 24px; */
     color: var(--text-color);
 }
 
