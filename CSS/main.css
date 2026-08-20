@@ -205,14 +205,16 @@ header {
     text-indent: 30px;
     cursor: text;
     transition: var(--transition-duration);
-    color: #0F172A; /* new: typed text was invisible (white on white) */
+    /* color: #0F172A; new: typed text was invisible (white on white) */
+    background: var(--background-color);
+    color: var(--text-color);
 }
 .input-search:focus {
     width: 200px;
-    background-color: white;
+    /* background-color: white; */
 }
 .input-search::placeholder {
-    color: #64748B;
+    color: var(--color-pallete-4);
 }
 
 /* New: mobile nav toggle button, hidden on desktop */
@@ -239,14 +241,17 @@ nav a {
     text-transform: capitalize;
     position: relative;
     overflow: hidden;
-    animation: slide-up 1s;
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes slide-up {
+    from { transform: translateY(50px); opacity: 0; visibility: hidden }
+    to { transform: translateY(0); opacity: 1; visibility: visible }
 }
 nav a:last-child {
     margin-right: 0;    
-}
-@keyframes slide-up {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
 }
 nav a:after {
     content: '';
@@ -296,9 +301,9 @@ nav a:hover, nav .active {
     font-size: 56px;
     margin: 20px 0px;
     text-transform: capitalize;
-    animation: slide-left 1s;
+    animation: slide-right 1s;
 }
-@keyframes slide-left {
+@keyframes slide-right {
     from { transform: translateX(-50px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
 }
@@ -542,17 +547,6 @@ nav a:hover, nav .active {
     }
 }
 
-/* Respect users who've asked for reduced motion (new) */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-        scroll-behavior: auto !important;
-    }
-}
 /* Media Queries - End ----------------------------------------------------------*/
 
 /* About Page - Start ----------------------------------------------------------*/
@@ -560,18 +554,19 @@ nav a:hover, nav .active {
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.about-heading {
+.heading {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 40px;
+    animation: slide-right 1s;
 }
-.about-heading h1 {
+.heading h1 {
     font-size: 36px;
     text-transform: capitalize;
     margin: 0;
 }
-.about-heading .bar {
+.heading .bar {
     flex: 1;
     height: 2px;
     background-image: linear-gradient(to right, var(--color-pallete-1), var(--color-pallete-4));
@@ -593,6 +588,7 @@ nav a:hover, nav .active {
     line-height: 1.9;
     font-size: 1.15em;
     color: var(--text-color);
+    animation: slide-bottom 1s;
 }
 .about-me p {
     margin: 0 0 20px;
@@ -673,7 +669,11 @@ nav a:hover, nav .active {
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: opacity var(--transition-duration), filter var(--transition-duration);
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: calc(0.2s * var(--p));
+    /* transition: var(--transition-duration); */
 }
 /* Spotlight: dim every card except the one being hovered - pure CSS, no JS */
 .project-grid:hover .project-card:not(:hover) {

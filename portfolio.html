@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <header>
-            <a class="logo" href="./home.html" title="Ahmed Allam">
+            <a class="logo" href="./index.html" title="Ahmed Allam">
                 <span>&lt;</span>aa/<span>&gt;</span>
                 <div class="top-border"></div>
                 <div class="right-border"></div>
@@ -41,16 +41,16 @@
             </button>
 
             <nav id="mainNav" class="nav-static">
-                <a class="home" href="./index.html">home</a>
-                <a class="about" href="./about.html">about</a>
-                <a class="portfolio active" href="./portfolio.html">portfolio</a>
-                <a class="skills" href="./skills.html">skills</a>
-                <a class="contact" href="./contact.html">contact</a>
+                <a class="home" href="./index.html" style="--i: 1">home</a>
+                <a class="about" href="./about.html" style="--i: 2">about</a>
+                <a class="portfolio active" href="./portfolio.html" style="--i: 3">portfolio</a>
+                <a class="skills" href="./skills.html" style="--i: 4">skills</a>
+                <a class="contact" href="./contact.html" style="--i: 5">contact</a>
             </nav>
         </header>
 
         <section class="portfolio-section" aria-labelledby="portfolio-heading">
-            <div class="about-heading">
+            <div class="portfolio-heading heading">
                 <h1 id="portfolio-heading">Portfolio</h1>
                 <div class="bar"></div>
             </div>
@@ -58,7 +58,31 @@
 
             <div class="project-grid">
 
-                <article class="project-card">
+                <article class="project-card" style="--p: 1">
+                    <div class="project-thumb">
+                        <img src="./Images/screenshot-full-size/to-to-app.png" alt="Screenshot of E-Commerce Dashboard project">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">
+                            <span class="tech-chip">HTML</span>
+                            <span class="tech-chip">CSS</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Basin To Do App</h3>
+                        <p class="project-desc">Interactive To-Do List built with JavaScript and dynamic DOM manipulation.</p>
+                        <div class="project-links">
+                            <a class="project-demo" href="https://ahmedallam2022.github.io/todo-list/" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a class="social-link" href="https://github.com/AhmedAllam2022/todo-list" target="_blank" rel="noopener" title="View on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" style="--p: 2">
                     <div class="project-thumb">
                         <img src="./Images/screenshot-full-size/jadoo.jpeg" alt="Screenshot of Movie Explorer project">
                     </div>
@@ -68,7 +92,7 @@
                             <span class="tech-chip">API</span>
                         </div>
                         <h3 class="project-title">jadoo</h3>
-                        <p class="project-desc">Browse trending titles, watch trailers and save favorites to a personal watchlist.</p>
+                        <p class="project-desc">Responsive travel website built with semantic HTML and advanced CSS layout techniques.</p>
                         <div class="project-links">
                             <a class="project-demo" href="https://ahmedallam2022.github.io/jadoo/" target="_blank" rel="noopener">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
@@ -81,7 +105,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" style="--p: 3">
                     <div class="project-thumb">
                         <img src="./Images/screenshot-full-size/ableton.jpeg" alt="Screenshot of Weather Forecast App project">
                     </div>
@@ -91,7 +115,7 @@
                             <span class="tech-chip">API</span>
                         </div>
                         <h3 class="project-title">ableton</h3>
-                        <p class="project-desc">A city-based forecast tool with a 5-day outlook, built on a public weather API.</p>
+                        <p class="project-desc">Responsive Ableton website recreation built with semantic HTML and advanced CSS layout techniques.</p>
                         <div class="project-links">
                             <a class="project-demo" href="https://ahmedallam2022.github.io/ableton/" target="_blank" rel="noopener">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
@@ -104,7 +128,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" style="--p: 4">
                     <div class="project-thumb">
                         <img src="./Images/screenshot-full-size/portfolio.jpeg" alt="Screenshot of Task Manager project">
                     </div>
@@ -114,7 +138,7 @@
                             <span class="tech-chip">LocalStorage</span>
                         </div>
                         <h3 class="project-title">Portfolio - SPA</h3>
-                        <p class="project-desc">A drag-and-drop to-do board with persistent storage and due-date reminders.</p>
+                        <p class="project-desc">Responsive multi-section website featuring modern UI components, advanced CSS layouts, and smooth animations.</p>
                         <div class="project-links">
                             <a class="project-demo" href="https://ahmedallam2022.github.io/portfolio/" target="_blank" rel="noopener">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
@@ -127,7 +151,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" style="--p: 5">
                     <div class="project-thumb">
                         <img src="./Images/screenshot-full-size/dashboard.jpeg" alt="Screenshot of Recipe Finder project">
                     </div>
@@ -137,7 +161,7 @@
                             <span class="tech-chip">CSS</span>
                         </div>
                         <h3 class="project-title">dashboard</h3>
-                        <p class="project-desc">Search and filter recipes by ingredient, diet type and cooking time.</p>
+                        <p class="project-desc">Responsive two-page website featuring modern UI components, advanced CSS layouts, and smooth animations.</p>
                         <div class="project-links">
                             <a class="project-demo" href="https://ahmedallam2022.github.io/Template-4/" target="_blank" rel="noopener">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
@@ -150,7 +174,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" style="--p: 6">
                     <div class="project-thumb">
                         <img src="./Images/screenshot-full-size/kasper.png" alt="Screenshot of Budget Tracker project">
                     </div>
@@ -161,7 +185,7 @@
                             <span class="tech-chip">JavaScript</span>
                         </div>
                         <h3 class="project-title">kasper</h3>
-                        <p class="project-desc">Log expenses by category and visualize monthly spending with animated bar charts.</p>
+                        <p class="project-desc">Responsive creative agency website built with HTML and CSS, focusing on clean layouts and responsive design.</p>
                         <div class="project-links">
                             <a class="project-demo" href="https://ahmedallam2022.github.io/kasper/" target="_blank" rel="noopener">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
@@ -174,7 +198,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" style="--p: 7">
                     <div class="project-thumb">
                         <img src="./Images/screenshot-full-size/leon.png" alt="Screenshot of E-Commerce Dashboard project">
                     </div>
@@ -185,7 +209,7 @@
                             <span class="tech-chip">JavaScript</span>
                         </div>
                         <h3 class="project-title">leon</h3>
-                        <p class="project-desc">An admin dashboard for tracking orders, revenue and inventory with live-updating charts.</p>
+                        <p class="project-desc">Responsive agency landing page built with HTML and CSS, featuring structured layouts, modern typography, and responsive design.</p>
                         <div class="project-links">
                             <a class="project-demo" href="https://ahmedallam2022.github.io/leon/" target="_blank" rel="noopener">
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
@@ -197,6 +221,7 @@
                         </div>
                     </div>
                 </article>
+                
             </div>
         </section>
     </div>
