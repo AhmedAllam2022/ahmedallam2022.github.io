@@ -1,16 +1,19 @@
 // Home Page - Start ------------------------------------------------------------
 // Mobile navigation toggle
-// If you already have a main.js file, just merge this block into it.
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('navToggle');
     const mainNav = document.getElementById('mainNav');
-
+    const navLinks = mainNav.querySelectorAll('a');
+    console.log(navLinks);
     if (!navToggle || !mainNav) return;
 
     navToggle.addEventListener('click', () => {
-        const isOpen = mainNav.classList.toggle('open');
-        navToggle.setAttribute('aria-expanded', String(isOpen));
-        navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        const isNavOpen = mainNav.classList.toggle('open');
+        // navToggle.setAttribute('aria-expanded', String(isOpen));
+        // navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        navLinks.forEach(a => {
+            a.classList.toggle('open');
+        })
     });
 
     // Close the menu after tapping a link (nicer on mobile)
