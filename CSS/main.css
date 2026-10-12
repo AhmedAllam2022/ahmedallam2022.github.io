@@ -187,11 +187,11 @@ header {
 .search i {
     position: absolute;
     top: 50%;
-    left: -6px;
+    left: 0px;
     transform: translate(10px, -50%);
     color: var(--color-pallete-4);
     font-size: 1em;
-    pointer-events: none; /* new: icon shouldn't block clicks on the input */
+    pointer-events: none;
 }
 .search i::after {
     content: '';
@@ -204,16 +204,14 @@ header {
 }
 .input-search {
     padding: 6px;
-    text-indent: 6px;
-    border: none;
     outline: none;
-    width: 115px;
+    width: 122px;
     background-color: var(--text-color);
     border: 2px solid #04588C;
     border-radius: 15px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    text-indent: 30px;
+    text-indent: 36px;
     cursor: text;
     transition: var(--transition-duration);
     /* color: #0F172A; new: typed text was invisible (white on white) */
