@@ -24,9 +24,14 @@ body {
 }
 * {
     box-sizing: border-box;
-    text-shadow: 0px 0px 0.3px var(--text-color);
+    /* text-shadow: 0px 0px 0.3px var(--text-color); */
 }
-
+h1, h2, h3, p, span:not(a span, button span){
+    cursor: default;
+}
+*::selection {
+    background-color: var(--color-pallete-2);
+}
 a {
     display: block;
     text-decoration: none;
@@ -66,7 +71,7 @@ button:focus-visible {
     position: relative;
 }
 
-/* Header - Start -------------------------------------------------------------------- */
+/* Header - Start */
 body { 
     color: var(--text-color);
     background-color: var(--background-color);
@@ -215,8 +220,7 @@ header {
     cursor: text;
     transition: var(--transition-duration);
     /* color: #0F172A; new: typed text was invisible (white on white) */
-    background: var(--background-color);
-    color: var(--text-color);
+
     
 }
 
@@ -253,7 +257,7 @@ nav a {
     position: relative;
     overflow: hidden;
     animation-name: slide-up;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-fill-mode: backwards;
     animation-delay: calc(0.1s * var(--i));
 }
@@ -446,6 +450,8 @@ nav a:hover, nav .active {
     border: 10px solid transparent;
     outline: 5px solid var(--color-pallete-4);
     overflow: hidden;
+    animation-name: blur;
+    animation-duration: 1.5s;    
 }
 .home-photo:hover {
     filter: grayscale(0);
@@ -460,7 +466,7 @@ nav a:hover, nav .active {
     width: 100%;
 }
 
-/* Media Queries - Start (new: real responsive behaviour) ---------------------------- */
+/* Media Queries - Start */
 @media (max-width: 1024px) {
     .container {
         margin-left: 5%;
@@ -565,7 +571,7 @@ nav a:hover, nav .active {
     }
 }
 
-/* Media Queries - End ----------------------------------------------------------*/
+/* Media Queries - End */
 
 /* About Page - Start ----------------------------------------------------------*/
 .about-section {
@@ -606,7 +612,11 @@ nav a:hover, nav .active {
     line-height: 1.9;
     font-size: 1.15em;
     color: var(--text-color);
-    animation: slide-bottom 1s;
+    
+}
+.fade-in {
+    animation: slide-bottom 1s 0.2s;
+    animation-fill-mode: backwards;
 }
 .about-me p {
     margin: 0 0 20px;
@@ -631,6 +641,9 @@ nav a:hover, nav .active {
     font-weight: 500;
     text-transform: capitalize;
     transition: var(--transition-duration);
+    animation: blur 1s;
+    animation-delay: calc(0.1s * var(--e));
+    animation-fill-mode: backwards;
 }
 .hobby-chip:hover {
     background-color: var(--color-pallete-4);
@@ -677,6 +690,7 @@ nav a:hover, nav .active {
     color: var(--text-color);
     opacity: 0.85;
     margin: 0 0 50px;
+    
 }
 .project-grid {
     display: grid;
@@ -690,7 +704,7 @@ nav a:hover, nav .active {
     animation-name: slide-up;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: calc(0.2s * var(--p));
+    animation-delay: calc(0.1s * var(--p));
     /* transition: var(--transition-duration); */
 }
 /* Spotlight: dim every card except the one being hovered - pure CSS, no JS */
@@ -837,14 +851,19 @@ nav a:hover, nav .active {
     margin: 0 0 50px;
 }
 
-/* Category grid ------------------------------------------------------- */
+/* Category grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 40px;
     margin-bottom: 60px;
 }
-
+.skill-category {
+    animation-name: blur;
+    animation-duration: 1s;
+    animation-delay: calc(0.2s * var(--d));
+    animation-fill-mode: backwards;
+}
 .skill-category-title {
     display: flex;
     height: 55px;
@@ -855,6 +874,7 @@ nav a:hover, nav .active {
     letter-spacing: 1px;
     /* margin: 0 0 24px; */
     color: var(--text-color);
+
 }
 
 .skill-category-title i {
@@ -906,6 +926,9 @@ nav a:hover, nav .active {
 /* Professional development / certifications ----------------------------- */
 .skills-programs {
     margin-top: 20px;
+    animation: blur 1s;
+    animation-delay: calc(0.1s * var(--d));
+    animation-fill-mode: backwards;
 }
 
 /* Currently learning banner ---------------------------------------------- */
@@ -918,6 +941,9 @@ nav a:hover, nav .active {
     border: 1px solid var(--color-pallete-4);
     border-radius: 16px;
     background-color: rgba(4, 88, 140, 0.12);
+    animation: blur 1s;
+    animation-delay: calc(0.1s * var(--d));
+    animation-fill-mode: backwards;
 }
 
 .currently-learning i {
@@ -985,12 +1011,16 @@ nav a:hover, nav .active {
     align-items: start;
 }
 
-/* Form ------------------------------------------------------------------ */
+/* Form */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 22px;
     margin-top: -22px;
+    animation: blur 0.8s;
+    animation-delay: calc(0.1s * var(--i));
+    animation-fill-mode: backwards;
+
 }
 .contact-form label {
     transition: var(--transition-duration);
@@ -1046,9 +1076,10 @@ nav a:hover, nav .active {
     border: none;
     cursor: pointer;
     font-family: "Inter", sans-serif;
+    color: var(--fa-font-solid);
 }
 
-/* Direct info panel ------------------------------------------------------ */
+/* Direct info panel */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1057,6 +1088,9 @@ nav a:hover, nav .active {
     border: 1px solid var(--color-pallete-4);
     border-radius: 16px;
     background-color: rgba(4, 88, 140, 0.12);
+    animation: blur 0.8s;
+    animation-delay: calc(0.1s * var(--i));
+    animation-fill-mode: backwards;
 }
 
 .contact-info-item {
@@ -1076,6 +1110,8 @@ nav a:hover, nav .active {
 }
 .contact-info-item a {
     display: inline;
+    font-style: normal; 
+    text-transform: lowercase;
     word-break: break-all;
 }
 
@@ -1084,7 +1120,7 @@ nav a:hover, nav .active {
     gap: 14px;
 }
 
-/* Responsive -------------------------------------------------------------- */
+/* Responsive */
 @media (max-width: 900px) {
     .contact-grid {
         grid-template-columns: 1fr;
